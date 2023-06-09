@@ -1,18 +1,77 @@
+
+
 body{
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(98 145 92);
+    justify-content: center;
 }
 
+
+h1{
+    color: aliceblue;
+    text-align: center
+}
+
+
+.tableViewUser, th ,td{
+    background-color: rgb(101 101 117);
+    /* width: 3px; */
+    border: 1px;
+    border-style: solid;
+}
+
+tbody {
+    width: 100%;
+    padding: 1vw 1vh;
+}
 
 .tableUser{
     background-color: rgb(90 90 115);
     margin: auto;
     width: 900px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.tableViewUser{
-    background-color: rgb(101 101 117);
-    margin: auto;
-    width: 3px;
+#tableUser tr {
+    display: flex;
+    width: 100%;
+    
+}
+
+#tableUser td {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    flex: 1;
+}
+
+input{
+    padding: 1%;
+    background-color: rgb(161, 192, 192);
+    width: 80%;
+}
+
+#typeDocument{
+    background-color: rgb(161, 192, 192)
+}
+
+#documentDiv {
+    display: flex;
+    gap: 1.5vh;
+}
+
+#btnSubmit, #document{
+
+    width: auto;
+
+}
+
+input::placeholder, input, select option, select {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif
 }
